@@ -1,0 +1,19 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 For this Assignment I used Atkin Sieve algorithm to find prime numbers efficiently. Finding primes in an iterative way up to 10^8 would have taken hours to compute, as I tried running the code from GeekforGeeks\
+In the following link:\
+\
+https://www.geeksforgeeks.org/how-to-find-prime-and-palindrome-numbers-using-multi-threading-in-java/\
+\
+And in fact, I had to stop the computation because it was wasting my time.  This is where Atkin Sieve comes into play, as preliminary cancels out factors of primes before proceeding to finding new prime numbers and this significantly helps the computation time. In my approach, all threads start at their same index as they started and work their way until maxValue has been reached or passed. The use of \'93synchronized\'94 allows for mutual exclusion and each thread is able to modify the sieve array, before all other threads try to modify it. This way, when a thread finished the process, it jumps to the next entry in the array that is false and prevents overlap. \
+\
+The runtime for this version is roughly 500 - 600 ms, compared to the super long runtime in the iterative version.\
+\
+Atkin Sieve algorithm was used from the following link:\
+\
+https://www.geeksforgeeks.org/sieve-of-atkin/}
