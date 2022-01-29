@@ -1,5 +1,5 @@
 Commands to run from terminal:
 
-cd <File directory>. // Note: file is the Primes.java file  
+Navigate to directory of Primes.java file using cd command  
   javac Primes.java  
   java Primes  
